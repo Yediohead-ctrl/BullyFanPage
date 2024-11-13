@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1070.15 627.68">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-2 {
+        font-family: Times-Roman, Times;
+        font-size: 194.47px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #231f20;
+      }
+
+      .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient);
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+        stroke-width: 15px;
+      }
+
+      .cls-5 {
+        letter-spacing: -.1em;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="535.08" y1="313.84" x2="535.08" y2="728.95" gradientUnits="userSpaceOnUse">
+      <stop offset=".12" stop-color="#fff"/>
+      <stop offset="1" stop-color="#231f20"/>
+    </linearGradient>
+  </defs>
+  <path class="cls-4" d="M7.5,313.84h0c0,169.19,126.58,306.34,282.73,306.34h489.69c156.15,0,282.73-137.15,282.73-306.34h0c0-169.19-126.58-306.34-282.73-306.34h-489.69C134.08,7.5,7.5,144.65,7.5,313.84Z"/>
+  <path class="cls-3" d="M345.43,2.52s133.87-25.35,133.87,339.22c0,0-2.79-334.24,32.58-334.24l-166.44-4.98Z"/>
+  <path class="cls-3" d="M592.78,620.4s-62.84,20.53-60.45-366.63c0,0,3.17,366.22-55.96,365.79l116.42.84Z"/>
+  <path class="cls-3" d="M811.15,618.33s-196.26-5.23-195.69-115.63c0,0,4.95,115.24-54.18,114.84l249.87.79Z"/>
+  <text class="cls-2" transform="translate(253.05 377.23) scale(.92 1)"><tspan x="0" y="0">BUL</tspan><tspan class="cls-5" x="388.95" y="0">L</tspan><tspan class="cls-1" x="488.37" y="0">Y</tspan></text>
+  <path class="cls-3" d="M650.99,620.59s-62.77-10.57-61.39-243.51c0,0,4.11,243.11-55.02,242.7l116.42.82Z"/>
+  <path class="cls-3" d="M333,2.52s171.61,8.57,171.61,205.76c.25-.23-14.45-206.41,146.38-205.76h-317.99Z"/>
+  <path class="cls-3" d="M223.32,9.76s196.26,5.23,195.69,115.63c0,0-4.95-115.24,54.18-114.84l-249.87-.79Z"/>
+  <path class="cls-3" d="M383.49,7.5s62.77,10.57,61.39,243.51c0,0-4.11-243.11,55.02-242.7l-116.42-.82Z"/>
+  <path class="cls-3" d="M954.95,452.17s-35.18,189.11-250.7,152.67c0,0,248.39,88.16,250.7-152.67Z"/>
+  <path class="cls-3" d="M364.01,618.33S5.31,676.05,91.7,315.69c-1.09,6.78-47.9,308.85,272.31,302.64Z"/>
+  <path class="cls-3" d="M119.82,139.55C183.25-91.65,399.27,54.66,401.17,55.95,203.33-33.72,120.84,137.42,119.82,139.55Z"/>
+  <path class="cls-3" d="M973.97,303.98S1008.43-7.41,685.44,16.67c0,0,355.06-77.38,288.53,287.31Z"/>
+  <path class="cls-3" d="M122.93,553.95s-220.83-138.87-10.43-286.46c-3.67,3.03-166.15,138.82,10.43,286.46Z"/>
+  <path class="cls-3" d="M1011.59,146.68s148.93,214.17-102.44,267.72c4.56-1.35,207.2-62.78,102.44-267.72Z"/>
+</svg>
