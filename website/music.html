@@ -5,16 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music</title>
     <link rel="stylesheet" href="../css/music.css">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
     <link rel="icon" href="../favicon/Favicon.png">
 </head>
-<style>
-    body {
-        margin: 0; 
-        height: 100%; 
-        overflow: hidden
-    }
-</style>
 <body>
     <header>
         <nav class="navbar">
@@ -31,34 +24,63 @@
         </nav>
     </header>
     <span class="time time-mobile">&nbsp;</span>
-        <!-- Voice Memo 1 -->
-        <div class="voice-memo-container">
-            <div class="voice-memo-header">
-                <button class="play-button" data-waveform="waveform1">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M8 5v14l11-7z"/>
-                    </svg>
-                </button>
-                <div id="waveform1" class="waveform-container"></div>
-                <div class="duration" id="duration1">00:07</div>
+    <br>
+
+    <img src="../albumcover/Bully.jpg" class="center">
+
+    <footer>
+        <div class="music-player">
+            <div class="song-list">
+                <div class="song-item" data-song="../music/PreacherMan.mp3">Preacher Man</div>
+                <div class="song-item" data-song="../music/BeautyAndTheBeast.mp3">Beauty And The Beast</div>
+                <div class="song-item" data-song="../music/HighsAndLows.mp3">Highs And Lows</div>
+                <div class="song-item" data-song="../music/SameShit.mp3">Same Shit</div>
             </div>
-            <div class="voice-memo-text">Hello hello hello hello hello</div>
-        </div>
-    
-        <!-- Voice Memo 2 -->
-        <div class="voice-memo-container">
-            <div class="voice-memo-header">
-                <button class="play-button" data-waveform="waveform2">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M8 5v14l11-7z"/>
-                    </svg>
-                </button>
-                <div id="waveform2" class="waveform-container"></div>
-                <div class="duration" id="duration2">00:15</div>
+            <div class="controls">
+                <button id="play-pause">&#9654;</button>
             </div>
-            <div class="voice-memo-text">This is another sample memo text.</div>
+            <audio id="audio"></audio>
         </div>
+    </footer>
+
+
+    <script>
+        const audio = document.getElementById("audio");
+        const playPauseButton = document.getElementById("play-pause");
+        const stopButton = document.getElementById("stop");
+        let currentSong = null;
+
+        document.querySelectorAll(".song-item").forEach(item => {
+            item.addEventListener("click", () => {
+                const song = item.dataset.song;
+                if (currentSong !== song) {
+                    audio.src = song;
+                    currentSong = song;
+                    audio.play();
+                    playPauseButton.textContent = "⏸";
+                } else if (!audio.paused) {
+                    audio.pause();
+                    playPauseButton.textContent = "▶";
+                }
+            });
+        });
+
+        playPauseButton.addEventListener("click", () => {
+            if (audio.paused) {
+                audio.play();
+                playPauseButton.textContent = "⏸";
+            } else {
+                audio.pause();
+                playPauseButton.textContent = "▶";
+            }
+        });
+
+        stopButton.addEventListener("click", () => {
+            audio.pause();
+            audio.currentTime = 0;
+            playPauseButton.textContent = "▶";
+        });
+    </script>
 </body>
-<script src="music.js"></script>
 <script src="time.js" defer="defer"></script>
 </html>
